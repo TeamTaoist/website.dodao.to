@@ -1,4 +1,4 @@
-# dodao.to
+# https://dodao.to
 
 **Dawn of DAO is a tool for DAOs to manage their treasury in a totally decentralized way.**   
 
