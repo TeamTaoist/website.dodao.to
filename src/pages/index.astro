@@ -24,8 +24,8 @@ const builtWith = [
 
 <Layout
   title='Home'
-  pageTitle='Brutal Theme | Home'
-  description='Brutal is a minimalistic, neobrutalism theme for Astro.'
+  pageTitle='Dawn of DAO | Home'
+  description='a tool to manage DAO treasury in a decentralized way'
 >
   <main class='bg-pink p-6'>
     <!-- <MobileSocials /> -->
@@ -34,17 +34,13 @@ const builtWith = [
         <Card>
           <div class='flex flex-col justify-between items-start gap-4'>
             <p class='mt-4 outfit text-2xl md:text-5xl lg:text-7xl'>
-              Brutal theme for <a
-                class='text-white'
-                target='_blank'
-                href='https://astro.build/'>Astro</a
-              >
+              Dawn of DAO
             </p>
             <p class='mt-2 outfit text-xl md:text-3xl lg:text-5xl'>
-              A minimalistic, neobrutalism theme for Astro.
+              a tool to manage DAO treasury
             </p>
-            <Button target={'_self'} href='/blog/'>
-              Check out the blog &rarr;
+            <Button target='_blank' href='https://app.dodao.to/'>
+              Check out our app &rarr;
             </Button>
           </div>
         </Card>
@@ -52,26 +48,12 @@ const builtWith = [
       <div class='flex-1'>
         <Card>
           <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
-            Brutal is built with
+            What we solve?
           </h2>
-          <ul class='flex gap-4 flex-wrap'>
-            {
-              builtWith.map((item) => (
-                <li>
-                  <Pill>
-                    <a
-                      class='sanchez'
-                      href={item.url}
-                      target='_blank'
-                      title={`Go to ${item.name}`}
-                    >
-                      {item.name}
-                    </a>
-                  </Pill>
-                </li>
-              ))
-            }
-          </ul>
+          There are lots of tools helping DAOs to do DAO governance, 
+          but most of them are partially decentralized and still rely 
+          on several people in DAO. When we tried to create our own 
+          venture DAO, we met lots of problems of lacking tools.
         </Card>
       </div>
       
@@ -79,30 +61,76 @@ const builtWith = [
     <section class="mt-8 grid md:grid-cols-2 gap-8">
         <Card>
           <h2 class='text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif'>
-            What is Brutal?
+            What is Dawn of DAO?
           </h2>
           <p class='poppins'>
-            Brutal is a theme built with Astro, UnoCSS by <a
-              href='https://www.elian.codes/'>Elian</a
-            >. It's a simple, fast, and modern theme that is easy to use and
-            customize. Mainly meant to power blogs and personal websites.
-            It's a simple, fast, and modern theme that is easy to use and
-            customize. Mainly meant to power blogs and personal websites.
-            It's a simple, fast, and modern theme that is easy to use and
-            customize. Mainly meant to power blogs and personal websites.
+            <a href='https://dodao.to/'>Dawn of 
+            DAO</a> provides a more decentralized way for the members
+            of a DAO to manage their assets, a well-integrated voting 
+            system for governance, a contract signing tool for DAO, 
+            and a decentralized escrow service for DAO.
           </p>
+          <br/>
+          <ul>
+          <li>
+            A contract signing tool, named <a class="text-white" target='_blank' href='https://daosigner.to/'>DAOSigner</a>
+          </li>
+          <li>
+            A decentralized escrow tool, named <a class="text-white" target='_blank' href='https://entrust3.xyz/'>entrust3</a>
+          </li>
+          <li>
+            A treasury management tool, named <a class="text-white" target='_blank' href='https://app.dodao.to/'>dodao</a>
+          </li>
+          </ul>
         </Card>
+
         <Card>
           <h2 class='text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif'>
-            What is Brutal?
+            What is entrust3?
           </h2>
           <p class='poppins'>
-            Brutal is a theme built with Astro, UnoCSS by <a
-              href='https://www.elian.codes/'>Elian</a
-            >. It's a simple, fast, and modern theme that is easy to use and
-            customize. Mainly meant to power blogs and personal websites.
+
+          A decentralized escrow tool, named entrust3, with this tool, 
+          DAO can publish specific tasks with a commission, those who 
+          have such resources or the ability to complete it will get 
+          the commission. It will solve the security problems for DAO. 
+          The assets in DAO are owned by each of the DAO members. For 
+          example, if a DAO owns several NFTs, such as Punk, the DAO 
+          members decide to sell it, but they cannot. Because most of 
+          the NFT marketplace is not designed for DAO, it's not possible
+           to list NFTs by a DAO.
+
           </p>
         </Card>
+
+        <Card>
+          <h2 class='text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif'>
+            What is DAOSigner?
+          </h2>
+          <p class='poppins'>
+
+          A contract signing tool, named DAOSigner, provides the 
+          interface for DAOs to sign the contract with anyone, including
+           other DAOs, using the multi-sign wallet integrated. Anyone who
+            wants to sign a contract with a DAO just fills in the smart 
+            contract address of the DAO in the contract, then signs it.
+
+          </p>
+        </Card>
+
+        <Card>
+          <h2 class='text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif'>
+            What is DoDAO?
+          </h2>
+          <p class='poppins'>
+
+          A treasury management tool, named dodao, the short name of 
+          Dawn of DAO, provides a multi-sign solution with a weighted
+           voting system. dodao integrates DAOSigner and entrust3 and
+            provides a smooth governance experience for DAOs. 
+          </p>
+        </Card>
+        
     </section>
   </main>
 </Layout>
