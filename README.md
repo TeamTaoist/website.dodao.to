@@ -1,34 +1,24 @@
-# Brutal - The neobrutalist Astro theme
+# dodao.to
 
-Brutal is a minimal neobrutalist theme for [Astro](https://astro.build/). It's based on Neobrutalist Web Design, a movement that aims to create websites with a minimalistic and functional design. It has some integrations like Image Optimization, RSS, Sitemap, ready to get your SEO done right.
+Dawn of DAO is a tool for DAOs to manage their treasury in a totally decentralized way. There are lots of tools helping DAOs to do DAO governance, but most of them are partially decentralized and still rely on several people in DAO. When we tried to create our own venture DAO, we met lots of problems of lacking tools. For example, we cannot have a tool to manage our treasury publicly, since current multisig wallets are EOA address based. When we want to sign a contract with projects, we have to sign the contract personally under the name of our DAO. When we want to sell our assets in our treasury, we cannot do it securely. We tried to search for the best tools for us to start our DAO but failed.   
 
-The theme has no JavaScript integration out of the box, but can always be added of course.
+So we decided to create a tool based on the knowledge of the previously used DAO tools and ideas, to have a tool for DAO totally decentralized, as Uniswap brings the dex to a new level.  
 
-This template is based on [my own personal website](<https://www.elian.codes/>), with some more generic things added.
+Dawn of DAO provides a more decentralized way for the members of a DAO to manage their assets, a well-integrated voting system for governance, a contract signing tool for DAO, and a decentralized escrow service for DAO.  
 
-## Usage
+In Dawn of DAO, we have three components at present.  
 
-You can bootstrap a new Astro project using Brutal with the following command:
+A contract signing tool, named DAOSigner, provides the interface for DAOs to sign the contract with anyone, including other DAOs, using the multi-sign wallet integrated. Anyone who wants to sign a contract with a DAO just fills in the smart contract address of the DAO in the contract, then signs it.  
 
-```bash
-# npm 6.x
-npx create astro@latest --template eliancodes/brutal
+A decentralized escrow tool, named entrust3, with this tool, DAO can publish specific tasks with a commission, those who have such resources or the ability to complete it will get the commission. It will solve the security problems for DAO. The assets in DAO are owned by each of the DAO members. For example, if a DAO owns several NFTs, such as Punk, the DAO members decide to sell it, but they cannot. Because most of the NFT marketplace is not designed for DAO, it's not possible to list NFTs by a DAO.  
 
-# npm 7+
-npx create astro@latest -- --template eliancodes/brutal
+A treasury management tool, named dodao, the short name of Dawn of DAO, provides a multi-sign solution with a weighted voting system. dodao integrates DAOSigner and entrust3 and provides a smooth governance experience for DAOs. In our plan, 4337 wallet will be integrated to optimize the UE of dodao.  
 
-# pnpm
-pnpm dlx create-astro --template eliancodes/brutal
-
-# yarn
-yarn create astro --template eliancodes/brutal
-```
-
-### Commands
+### Build
 
 All commands are run from the root of the project, from a terminal:
 
-(Here I use PNPM, no problem if you use NPM or Yarn)
+(no problem if you use NPM or Yarn)
 
 | Command             | Action                                             |
 | :------------------ | :------------------------------------------------- |
@@ -39,79 +29,9 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm astro ...`    | Run CLI commands like `astro add`, `astro preview` |
 | `pnpm astro --help` | Get help using the Astro CLI                       |
 
-## Integrations
 
-### UnoCSS
+### Thanks
 
-In this theme, I'm using [UnoCSS](https://uno.antfu.me/) to generate the CSS. It's a utility-first CSS framework that uses a single class to style elements. It's very easy to use and has a lot of features. It's setup to be completely compatible with TailwindCSS, with the advantage of being able to use PureCSS icons. You can always switch out UnoCSS for TailwindCSS if you want to, without breaking the general styles.
+This website is based on [https://www.elian.codes](<https://www.elian.codes/>) and Brutal.  
 
-### Sitemap
-
-To generate the sitemap, you don't need to do anything. It's automatically generated when you build your site. You'll just need to switch out the `site` on `astro.config.mjs` to your own.
-
-```js title="astro.config.mjs"
-import { defineConfig } from 'astro/config';
-
-export default defineConfig({
-  site: 'https://example.com',
-});
-```
-
-### RSS
-
-The RSS feed is automatically generated from the Markdown files in the `src/content/blog` folder. You can ofcourse completely change this to your own needs.
-
-The RSS will output to `https://example.com/feed.xml` by default. You can change this, by renaming `src/pages/feed.xml.js`.
-
-### Image
-
-## Components
-
-### `components/blog/`
-
-This directory contains all components for the blog.
-
-### `components/errors/`
-
-This directory contains all error components.
-
-#### `components/errors/404.astro`
-
-This component is used when a page is not found.
-
-### `components/generic/`
-
-This directory contains all generic components, reused over multiple pages.
-
-### `components/home/`
-
-This directory contains all components for the home page.
-
-### `components/layout/`
-
-This directory contains all layout components. For instance, the header and footer and `<head>` section.
-
-### Colors
-
-The theme has a few colors that you can use in the included components.
-
-- red
-- blue
-- green
-- yellow
-- pink
-- purple
-- orange
-- teal
-- cyan
-- lime
-- emerald
-- fuchsia
-- violet
-- rose
-- sky
-- amber
-
-More colors can be added in `astro.config.mjs` in the `colors` array.
-
-If you need more from this theme, don't hesitate to open an issue or reach out to me!
+Brutal is a minimal neobrutalist theme for [Astro](https://astro.build/). It's based on Neobrutalist Web Design, a movement that aims to create websites with a minimalistic and functional design. It has some integrations like Image Optimization, RSS, Sitemap, ready to get your SEO done right.  

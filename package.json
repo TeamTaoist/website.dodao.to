@@ -1,14 +1,9 @@
 {
-  "name": "brutal",
-  "version": "0.1.2",
+  "name": "dodao",
+  "version": "0.1.0",
   "private": false,
   "type": "module",
-  "author": {
-    "name": "Elian Van Cutsem",
-    "email": "hello@elian.codes",
-    "url": "https://www.elian.codes/"
-  },
-  "homepage": "https://brutal.elian.codes",
+  "homepage": "https://dodao.to",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
